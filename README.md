@@ -1,1 +1,1 @@
-First repository as an iSWE student
+First repository writing python as an iSWE student
