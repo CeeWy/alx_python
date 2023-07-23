@@ -1,5 +1,5 @@
 def validate_password(password):
-    if len(password) > 8:
+    if len(password) < 8:
         return False
     if ' ' in password:
         return False
