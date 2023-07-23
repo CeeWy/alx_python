@@ -18,6 +18,4 @@ def validate_password(password):
     if upperCase and lowerCase and digit:
         return True
     else:
-        return False
-    
-    print(validate_password(perinc1))
+        return FalseS
