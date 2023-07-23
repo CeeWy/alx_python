@@ -1,15 +1,13 @@
 def fibonacci_sequence(num):
-    num1 = 0
-    num2 = 1
-    next_number = 0
-    count = 1
-  
-    while(count <= num):
-        print(next_number, end=" ")
-        count += 1
-        num1 = num2
-        num2 = next_number
-        next_number = num1 + num2
-        t_number = num1 + num2
-
-print(fibonacci_sequence(10))
+    if num <= 0:
+        return []
+    elif num == 1:
+        return [0]
+    elif num == 2:
+        return [0, 1]
+    else:
+        fCounter= [0, 1]
+        while len(fCounter) < num:
+            next_num = fCounter[-1] + fCounter[-2]
+            fCounter.append(next_num)
+        return fCounter
